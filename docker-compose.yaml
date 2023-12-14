@@ -10,3 +10,8 @@ services:
       - KEYCLOAK_PASSWORD=pass
       - KEYCLOAK_USER=admin
       - PROXY_ADDRESS_FORWARDING=true
+    volumes:
+      - keycloak_data:/opt/jboss/keycloak/standalone/data
+
+volumes:
+  keycloak_data:
